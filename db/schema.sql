@@ -20,6 +20,21 @@ CREATE TABLE Product (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   product_name VARCHAR(100) NOT NULL,
   price DECIMAL NOT NULL,
-  stock INT NOT NULL 
+  stock INT NOT NULL,
+  category_id INT,
+  REFERENCES category(id)  
 );
 
+
+CREATE TABLE Tag (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  tag_name VARCHAR(30) 
+);
+
+CREATE TABLE ProductTag (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  product_id INT,
+  tag_id INT, 
+  REFERENCES product(id)
+  REFERENCES tag(id)  
+);
