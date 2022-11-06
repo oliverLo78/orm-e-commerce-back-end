@@ -38,5 +38,7 @@ CREATE TABLE ProductTag (
   product_id INT,
   tag_id INT, 
   REFERENCES product(id)
+  FOREIGN KEY (product_id)
   REFERENCES tag(id)  
+  FOREIGN Key (tag_id)
 );

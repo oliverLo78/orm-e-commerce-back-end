@@ -10,12 +10,13 @@ class Product extends Model {}
 Product.init(
   {
     // define columns
-    id: {
-      type: DataTypes.INTERGER,
-      allowNull: false,
-      primaryKey: true,
-      autoIncrement: true,
-    },
+    // id: {
+    //   type: DataTypes.INTERGER,
+    //   allowNull: false,
+    //   primaryKey: true,
+    //   autoIncrement: true,
+    //   unique: true
+    // },
     product_name: {
       type: DataTypes.STRING,
       // prevents null values
@@ -37,11 +38,10 @@ Product.init(
         isNumeric: true,
       }
     },
-    category: {
-
-    },
-
-
+    category_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+  }
     
   },
   {
@@ -54,11 +54,15 @@ Product.init(
 );
 
 // Associations
-Foo.hasOne(Bar, {
-  foreignKey: 'myFooId'
-});
-Bar.belongsTo(Foo);
+const Category = sequelize.define('Category', { 
+        category_name: {
+          type: DataTypes.STRING,
+          unique: true
+        } 
 
+  });
 
+  Product.hasOne(Category);
+  // Category.belongsTo(Product);
 
 module.exports = Product;
