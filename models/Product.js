@@ -29,12 +29,13 @@ Product.init(
       }
     },
     stock: {
-      type: DataTypes.INTEGER,
+      // Set default value of 10
+      type: DataTypes.INTEGER(10),     
       allowNull: false,
-      // Set a default value of 10.
-
-      // Validates that the value is numeric.
-    
+      // Validates that the value is numeric
+      validate: {
+        isNumeric: true,
+      }
     },
     category: {
 
@@ -52,7 +53,11 @@ Product.init(
   }
 );
 
-
+// Associations
+Foo.hasOne(Bar, {
+  foreignKey: 'myFooId'
+});
+Bar.belongsTo(Foo);
 
 
 
