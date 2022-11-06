@@ -59,7 +59,6 @@ const Category = sequelize.define('Category', {
           type: DataTypes.STRING,
           unique: true
         } 
-
   });
 
   Product.hasOne(Category);
