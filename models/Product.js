@@ -11,11 +11,11 @@ Product.init(
   {
     // define columns
     // id: {
-    //   type: DataTypes.INTERGER,
-    //   allowNull: false,
-    //   primaryKey: true,
-    //   autoIncrement: true,
-    //   unique: true
+    //    type: DataTypes.INTERGER,
+    //    allowNull: false,
+    //    primaryKey: true,
+    //    autoIncrement: true,
+    //    unique: true
     // },
     product_name: {
       type: DataTypes.STRING,
@@ -41,8 +41,7 @@ Product.init(
     category_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
-  }
-    
+    }
   },
   {
     sequelize,
@@ -53,15 +52,7 @@ Product.init(
   }
 );
 
-// Associations
-const Category = sequelize.define('Category', { 
-        category_name: {
-          type: DataTypes.STRING,
-          unique: true
-        } 
-  });
 
-  Product.hasOne(Category);
-  // Category.belongsTo(Product);
+const Tag = sequelize.define('Tag', { type: DataTypes.STRING });
 
 module.exports = Product;
