@@ -9,10 +9,11 @@ USE ecommerce_db;
 
 -- Creates the table "Category" within ecommerce_db --
 CREATE TABLE Category (
-  -- Creates a numeric column called "id" which will automatically increment its default value as we create new rows --
-  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  -- Makes a string column called "category_name" which cannot contain null --
-  category_name VARCHAR(100) NOT NULL
+-- Creates a numeric column called "id" which will automatically increment its default value as we create new rows --
+id INT NOT NULL AUTO_INCREMENT,
+-- Makes a string column called "category_name" which cannot contain null --
+category_name VARCHAR(100) NOT NULL,
+PRIMARY KEY (id)
 );
 
 
@@ -22,9 +23,10 @@ CREATE TABLE Product (
   price DECIMAL NOT NULL,
   stock INT NOT NULL,
   category_id INT,
-  REFERENCES category(id)  
-);
+  FOREIGN KEY (category_id)
+  REFERENCES category(id)
 
+);
 
 CREATE TABLE Tag (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,

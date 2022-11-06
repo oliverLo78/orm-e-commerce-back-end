@@ -11,7 +11,7 @@ Product.init(
   {
     // define columns
     id: {
-      type: DataType.INTERGER,
+      type: DataTypes.INTERGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
@@ -22,15 +22,17 @@ Product.init(
       allowNull: false,
     },
     price: {
-      type: DataType.DECIMAL,
+      type: DataTypes.DECIMAL,
       allowNull: false,
       validate: {
-        isDecimal
+        isDecimal: true,
       }
     },
     stock: {
-      
+      type: DataTypes.INTEGER,
+      allowNull: false,
       // Set a default value of 10.
+
       // Validates that the value is numeric.
     
     },
@@ -49,5 +51,9 @@ Product.init(
     modelName: 'product',
   }
 );
+
+
+
+
 
 module.exports = Product;
