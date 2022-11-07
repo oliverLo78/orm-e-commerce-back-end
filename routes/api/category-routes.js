@@ -15,14 +15,22 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
+  Category.findByPk(req.params.id).then((categoryData) => {
+    res.json(categoryData);
+  });
 });
 
 router.post('/', (req, res) => {
   // create a new category
-  Category.create({
-    category_name: req.body.category_name,
-  })
-});
+  Category.create(req.body)
+    .then((newCategory) => {
+      res.json(newCategory);
+    })
+    .catch((err) => {
+      res.json(err);
+    });
+  });
+  
 
 router.put('/:id', (req, res) => {
   // update a category by its `id` value
