@@ -20,7 +20,7 @@ router.get('/:id', (req, res) => {
       where:{
           id: req.params.id
             }, 
-     1
+     
      include:[Category, {model:Tag, through:ProductTag}]
           }).then((tagData) => {
         res.json(tagData);
@@ -103,6 +103,24 @@ router.put('/:id', (req, res) => {
 
 router.delete('/:id', (req, res) => {
   // delete one product by its `id` value
+  const sql = `DELETE FROM products WHERE id = ?`;
+  const params = [req.params.id];
+  
+  db.query(sql, params, (err, result) => {
+    if (err) {
+      res.statusMessage(400).json({ error: res.message });
+    } else if (!result.affectedRows) {
+      res.json({
+      message: 'Product not found'
+      });
+    } else {
+      res.json({
+        message: 'deleted',
+        changes: result.affectedRows,
+        id: req.params.id
+      });
+    }
+  });
 });
 
 module.exports = router;

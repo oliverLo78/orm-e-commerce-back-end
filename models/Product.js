@@ -10,13 +10,6 @@ class Product extends Model {}
 Product.init(
   {
     // define columns
-    // id: {
-    //    type: DataTypes.INTERGER,
-    //    allowNull: false,
-    //    primaryKey: true,
-    //    autoIncrement: true,
-    //    unique: true
-    // },
     product_name: {
       type: DataTypes.STRING,
       // prevents null values
