@@ -100,10 +100,11 @@ npm i mysql2
 
 
 ## Usage
-1. Give a detailed description of how to use your project.
-2. Remember you already described how to install your file so you don't have to reiterate any of that information.
-3. Its typical to have a screenshot or gif of the user experience while going through the user experience.
-4. This is a good place to add a screenshot of the project if your homework requires it.
+1. Open API GET routest in Insomnia for categories, products, or tags 
+2. The data for each of these routes is displayed in a formatted JSON
+3. API POST, PUT, and DELETE routes in Insomnia
+4. Successfully create, update, and delete data in my database
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contributing
@@ -119,24 +120,53 @@ If you have a suggestion that would make this better, please fork the repo and c
 ## Tests
 
 ### Test 1
-Detailed description of your test. This is abstract so use your best judgement. Most times this section is unnecessary.
+In DBeaver you can drop existing database if exists then create ecommerce_db database.
+After create a tables for category, product, tag, product tag. refresh table and you will see tables with their respective columns.
+  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## License
 
-Distributed under the XXX License. See [LICENSE](./LICENSE) for more information.
+MIT License
+
+Copyright (c) 2022 oliverLo78
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contact
 
 For any further questions feel free to contact me via:
-- GitHub: [GitHub Username](#)
-- Email: [Your Email](mailto:#)
-- LinkedIn: [Name on LinkedIn](#)
+- GitHub: [oliverLo78](#https://github.com/oliverLo78?tab=repositories)
+- Email: [oliverberto@gmail.com](mailto:#oliverberto@gmail.com)
+- LinkedIn: [Oliver Lopez](https://www.linkedin.com/in/oliver-lopez78/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Acknowledgments
 
 Special thanks to these resources. You have proven invaluable to creating this project:
-- [Websites, People, and Third Party Resources that aren't already listed under 'Built With'](#)
+- [Websites, People, and Third Party Resources that aren't already listed under 'Built With'] 
+
+- Sequilize: [Getting-started](https://sequelize.org/docs/v6/getting-started/)
+- Sequilize: [Associations](#https://sequelize.org/docs/v6/core-concepts/assocs/)
+- UCF: [Coding bootcamp](#https://coding-boot-camp.github.io/full-stack/mysql/mysql-installation-guide)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
