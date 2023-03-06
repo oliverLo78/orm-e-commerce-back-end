@@ -33,7 +33,7 @@ THEN I am able to successfully create, update, and delete data in my database
 ```
 Your walkthrough video should also show the POST, PUT, and DELETE routes for products and tags being tested in Insomnia.
 
-[![Walkthrough video]({https://drive.google.com/file/d/1I_qniednFxdwl4r4mXHXPnM5SvN8HiPc/view})
+[![Walkthrough video](https://drive.google.com/file/d/1I_qniednFxdwl4r4mXHXPnM5SvN8HiPc/view)]
 
 While building this project I learned to:
 
