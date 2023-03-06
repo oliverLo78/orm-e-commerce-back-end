@@ -32,7 +32,9 @@ WHEN I test API POST, PUT, and DELETE routes in Insomnia
 THEN I am able to successfully create, update, and delete data in my database
 ```
 Your walkthrough video should also show the POST, PUT, and DELETE routes for products and tags being tested in Insomnia.
-[![Walkthrough video](https://drive.google.com/file/d/1I_qniednFxdwl4r4mXHXPnM5SvN8HiPc/view)
+
+[Uploading Video ORM Challenge13_ Nov 8, 2022 7_32 PM.webm…]()
+
 
 While building this project I learned to:
 
