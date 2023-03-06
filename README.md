@@ -31,13 +31,14 @@ THEN the data for each of these routes is displayed in a formatted JSON
 WHEN I test API POST, PUT, and DELETE routes in Insomnia
 THEN I am able to successfully create, update, and delete data in my database
 ```
+Your walkthrough video should also show the POST, PUT, and DELETE routes for products and tags being tested in Insomnia.
+![Walkthrough video](https://drive.google.com/file/d/1I_qniednFxdwl4r4mXHXPnM5SvN8HiPc/view)
 
 While building this project I learned to:
 
 - To use back end Express.js framework for Node.js to write APIs handle HTTP requests
 - Implement middleware in the server-side application, route and HTTP method 
 - GET retrieve a resource POST submit data DELETE a specified resource PUT update a resource with payload
-- 
 
 <!-- This section is optional, checkout out Shields_Library.md for pregenerated shields -->
 ### Built With
@@ -80,7 +81,6 @@ The following animation shows the application's POST, PUT, and DELETE routes for
 
 ![insomnia preview-3](/Assets/13-orm-homework-demo-03.gif)
 
-Your walkthrough video should also show the POST, PUT, and DELETE routes for products and tags being tested in Insomnia.
 
 3. Single line of code example `this is a line of code`
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
