@@ -41,8 +41,8 @@ While building this project I learned to:
 - Implement middleware in the server-side application, route and HTTP method 
 - GET retrieve a resource POST submit data DELETE a specified resource PUT update a resource with payload
 - Filled Out the API Routes to perform RESTful CRUD Operations
-- filled out the unfinished routes in ``product-routes.js``, ``tag-routes.js``, and ``category-routes.js`` to perform
-  create, read, update, and delete operations using Sequelize models.
+- filled out the unfinished routes in ``product-routes.js``, ``tag-routes.js``, and ``category-routes.js``
+- to perform create, read, update, and delete operations using Sequelize models.
 
 <!-- This section is optional, checkout out Shields_Library.md for pregenerated shields -->
 ### Built With
